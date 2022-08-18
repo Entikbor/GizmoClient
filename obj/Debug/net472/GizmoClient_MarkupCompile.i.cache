@@ -1,0 +1,20 @@
+﻿GizmoClient
+
+
+winexe
+C#
+.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Debug\net472\
+
+none
+false
+TRACE;DEBUG;NETFRAMEWORK;NET472;
+
+6666468954
+
+144-458738729
+1511828720963
+Client\ClientApplication.xaml;Client\Controls\CircularProgressBar.xaml;Client\Controls\ManagerUI.xaml;Client\MessageBoxWindow.xaml;Client\SplashWindow.xaml;resources\baseresources.xaml;
+
+False
+

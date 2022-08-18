@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Client.MessageBoxWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:lex="clr-namespace:Localization.Extensions;assembly=DataInterfaces" xmlns:Enumerations="clr-namespace:SharedLib;assembly=DataInterfaces" x:Name="Window" FontSize="13.333" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Title="Notification" AllowsTransparency="True" WindowStyle="None" Foreground="#FFFFFFFF" Background="{DynamicResource brush-default-background}" SizeToContent="Height" UseLayoutRounding="True" BorderBrush="{DynamicResource brush-dafault-border}" BorderThickness="1" xmlns:client="clr-namespace:Client;assembly=GizmoClient" DataContext="{Binding Source={StaticResource DefaultButtonConverter}, Path=BindableConverterParameter, Mode=OneWayToSource}">
+  <FrameworkElement.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GizmoClient;component/Resources/BaseResources.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </FrameworkElement.Resources>
+  <Grid Background="{DynamicResource brush-default-background}">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition />
+      <RowDefinition Height="Auto" MinHeight="50.093" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid Background="{DynamicResource brush-dafault-border}" ColumnSpan="2" Visibility="{Binding Title, Converter={StaticResource EmptyStringToVisibilityConverter}, Mode=OneWay}">
+      <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" FontWeight="Bold" Margin="2" Text="{Binding Title, FallbackValue=Messagebox Title}" />
+    </Grid>
+    <Image HorizontalAlignment="Center" Height="32" Width="32" Margin="4,4,4,0" VerticalAlignment="Top" Grid.Row="1" Visibility="{Binding IconVisible}" Source="{Binding Icon}" />
+    <ScrollViewer Grid.Column="1" Margin="4,4,4,8" Grid.Row="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalScrollBarVisibility="Hidden" CanContentScroll="True">
+      <TextBlock IsEnabled="False" TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message, FallbackValue=Message}" />
+    </ScrollViewer>
+    <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="4">
+      <Button Margin="4" Padding="8" CommandParameter="0" MinWidth="80" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocTextUpper UI_OK}" Visibility="{Binding IsEnabled, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay, RelativeSource={RelativeSource Self}}" Command="{Binding ButtonCommand}" IsDefault="{Binding DefaultButton, ConverterParameter={x:Static Enumerations:NotificationButtons.Ok}, Converter={StaticResource DefaultButtonConverter}}" />
+      <Button Margin="4" Padding="8" CommandParameter="1" MinWidth="80" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocTextUpper UI_YES}" Visibility="{Binding IsEnabled, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay, RelativeSource={RelativeSource Self}}" Command="{Binding ButtonCommand}" IsDefault="{Binding DefaultButton, ConverterParameter={x:Static Enumerations:NotificationButtons.Yes}, Converter={StaticResource DefaultButtonConverter}}" />
+      <Button Margin="4" Padding="8" CommandParameter="2" MinWidth="80" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocTextUpper UI_NO}" Visibility="{Binding IsEnabled, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay, RelativeSource={RelativeSource Self}}" Command="{Binding ButtonCommand}" IsDefault="{Binding DefaultButton, ConverterParameter={x:Static Enumerations:NotificationButtons.No}, Converter={StaticResource DefaultButtonConverter}}" />
+      <Button Margin="4" Padding="8" CommandParameter="3" MinWidth="80" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocTextUpper UI_CANCEL}" Visibility="{Binding IsEnabled, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay, RelativeSource={RelativeSource Self}}" Command="{Binding ButtonCommand}" IsDefault="{Binding DefaultButton, ConverterParameter={x:Static Enumerations:NotificationButtons.Cancel}, Converter={StaticResource DefaultButtonConverter}}" />
+    </StackPanel>
+  </Grid>
+</Window>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Client.Controls.ManagerUI" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:SkinInterfaces="clr-namespace:SkinInterfaces;assembly=DataInterfaces" xmlns:lex="clr-namespace:Localization.Extensions;assembly=DataInterfaces" xmlns:Engine="clr-namespace:Localization.Engine;assembly=DataInterfaces" Engine:LocalizeDictionary.DesignSearchPath="D:\My Documents\Visual Studio 2012\Projects\Gizmo\Server_Service\Server_Service\bin\Debug\Languages" Engine:LocalizeDictionary.DesignLanguage="English" Title="ManagerUI" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" ShowInTaskbar="False" BorderThickness="1" SizeToContent="Height" Width="350" WindowStartupLocation="CenterScreen" Foreground="#FFFFFFFF" BorderBrush="{DynamicResource brush-dafault-border}" Background="{DynamicResource brush-default-background}" UseLayoutRounding="True" xmlns:controls="clr-namespace:Client.Controls;assembly=GizmoClient" FocusManager.FocusedElement="{SkinInterfaces:FirstFocusedElement}">
+  <FrameworkElement.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GizmoClient;component/Resources/BaseResources.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </FrameworkElement.Resources>
+  <UIElement.InputBindings>
+    <KeyBinding Key="Escape" Command="{Binding ExitCommand}" />
+  </UIElement.InputBindings>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid Name="login_info" ColumnSpan="2" Background="{DynamicResource brush-dafault-border}" Visibility="{Binding IsAuthenticated, ConverterParameter=True, Converter={StaticResource BoolToVisibilityConverter}}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <DockPanel Margin="4">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFAFAFAF" Text="{lex:LocText CLIENT_MANAGER_LOGIN_ATTEMPTS}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFAFAFAF" Margin="2" Text="{Binding LoginAttempts, FallbackValue=0}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Text="/" Foreground="#FFAFAFAF" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFAFAFAF" Margin="2" Text="{Binding MaxAttempts, FallbackValue=0}" />
+      </DockPanel>
+      <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFAFAFAF" Grid.Column="1" Margin="4" Text="{Binding TimeLeft, FallbackValue=0}" />
+    </Grid>
+    <Grid Name="login_grid" Column="1" Row="1" Visibility="{Binding IsAuthenticated, ConverterParameter=True, Converter={StaticResource BoolToVisibilityConverter}}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <DockPanel VerticalAlignment="Center">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4" FontWeight="Bold" Text="{lex:LocText CLIENT_MANAGER_PASSWORD}" />
+        <PasswordBox SkinInterfaces:PasswordBoxAssistant.BindPassword="True" TabIndex="0" VerticalAlignment="Center" PasswordChar="*" MaxLength="25" MinHeight="25" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" SkinInterfaces:PasswordBoxAssistant.BoundPassword="{Binding Password, Mode=TwoWay, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" />
+      </DockPanel>
+      <Button HorizontalAlignment="Center" Margin="4" VerticalAlignment="Center" Grid.Column="1" MinHeight="25" MinWidth="75" IsDefault="True" TabIndex="1" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocText UI_ACCEPT}" Command="{Binding AcceptCommand}" />
+    </Grid>
+    <Grid Name="options_grid" Column="1" Row="2" Margin="4" Background="{DynamicResource brush-dafault-border}" Visibility="{Binding IsAuthenticated, ConverterParameter=False, Converter={StaticResource BoolToVisibilityConverter}}">
+      <StackPanel>
+        <Grid Margin="4">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button Margin="2" Width="100" MinHeight="25" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Command="{Binding AdminModeCommand}">
+            <TextBlock TextWrapping="Wrap" Margin="2" Text="{lex:LocText CLIENT_MANAGER_SWITCH_SHELL}" />
+          </Button>
+          <TextBlock TextWrapping="Wrap" Grid.Column="1" Margin="2" Text="{lex:LocText CLIENT_MANAGER_SWITCH_SHELL_MESSAGE}" />
+        </Grid>
+        <Grid Margin="4">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button Margin="2" Width="100" CommandParameter="True" MinHeight="25" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Command="{Binding UninstallCommand}">
+            <TextBlock TextWrapping="Wrap" Margin="2" Text="{lex:LocText CLIENT_MANAGER_DEACTIVATE}" />
+          </Button>
+          <TextBlock TextWrapping="Wrap" Grid.Column="1" Margin="2" Text="{lex:LocText CLIENT_MANAGER_DEACTIVATE_MESSAGE}" />
+        </Grid>
+        <Grid Margin="4">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Button Margin="2" HorizontalAlignment="Left" Width="100" CommandParameter="False" MinHeight="25" MinWidth="75" VerticalAlignment="Center" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Command="{Binding UninstallCommand}">
+            <TextBlock TextWrapping="Wrap" Margin="2" Text="{lex:LocText CLIENT_MANAGER_UNINSTALL}" />
+          </Button>
+          <TextBlock TextWrapping="Wrap" Grid.Column="1" Margin="2" Text="{lex:LocText CLIENT_MANAGER_UNINSTALL_MESSAGE}" />
+        </Grid>
+      </StackPanel>
+    </Grid>
+    <Grid Name="exit_grid" Column="1" Row="3">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Button Grid.Row="2" Margin="4" VerticalAlignment="Center" MinHeight="25" MinWidth="75" Grid.Column="1" Background="{DynamicResource brush-default}" BorderBrush="{DynamicResource brush-dafault-border}" Content="{lex:LocText UI_CANCEL}" Command="{Binding ExitCommand}" />
+    </Grid>
+  </Grid>
+</Window>

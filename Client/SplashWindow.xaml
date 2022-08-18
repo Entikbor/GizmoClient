@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Client.SplashWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:Client.Controls" x:Name="Window" Title="" Background="#00FFFFFF" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" SizeToContent="Manual" UseLayoutRounding="True" RenderOptions.BitmapScalingMode="Fant" RenderOptions.EdgeMode="Unspecified" FontFamily="Candara" Foreground="#FFFFFFFF" xmlns:client="clr-namespace:Client">
+  <FrameworkElement.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/GizmoClient;component/Resources/BaseResources.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </FrameworkElement.Resources>
+  <Border Name="border" BorderThickness="1" BorderBrush="{DynamicResource brush-dafault-border}" Background="{DynamicResource brush-default}">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <TextBlock Name="header_text" HorizontalAlignment="Left" TextWrapping="Wrap" FontWeight="SemiBold" VerticalAlignment="Center" Margin="4" Text="{Binding ActivityString, FallbackValue=Loading}" />
+      <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" Margin="4">
+        <Viewbox Stretch="Fill" Width="32" Height="32" Margin="2">
+          <controls:CircularProgressBar Height="Auto" Width="Auto" />
+        </Viewbox>
+        <TextBlock FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" Text="{Binding Client.VersionInfo, FallbackValue=Gizmo Client}" />
+      </StackPanel>
+      <DockPanel Grid.Row="2" VerticalAlignment="Top" Background="{DynamicResource brush-dafault-border}">
+        <TextBlock Name="footer_text" TextWrapping="Wrap" Text="Copyright © NETProjects" VerticalAlignment="Center" FontSize="10.667" Margin="4" HorizontalAlignment="Left" />
+        <Image VerticalAlignment="Center" Height="30" HorizontalAlignment="Right" Source="/GizmoClient;component/Resources/Images/net_logo.png" Margin="4" />
+      </DockPanel>
+    </Grid>
+  </Border>
+</Window>

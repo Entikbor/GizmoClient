@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="LOGIN_IS_CURRENTLY_BLOCKED"><value>Login is currently blocked</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_PURCHASE_PERIOD_DISALLOWED_MESSAGE"><value>Product purchase is not allowed at this time</value></data>
+  <data name="APP_MODE_LAN_MULTIPLAYER"><value>LAN Multiplayer</value></data>
+  <data name="OPTIONS"><value>Options</value></data>
+  <data name="PRODUCT_BUY_AND_GET"><value>Buy one and get</value></data>
+  <data name="IF_MOBILE_PHONE"><value>Mobile</value></data>
+  <data name="HEADER_USER_BALANCE"><value>Balance</value></data>
+  <data name="IF_NEW_PASSWORD"><value>New password</value></data>
+  <data name="ORDER_ACTION_PLACE"><value>Place order</value></data>
+  <data name="APP_MODE_REQUIRE_SUBSCRIPTION"><value>Requires subscription</value></data>
+  <data name="PASSWORD"><value>Password</value></data>
+  <data name="CLINET_UI_LANGUAGE"><value>Language</value></data>
+  <data name="CLEAR_ABBREVIATED"><value>CLR</value></data>
+  <data name="REGISTER_ACTION_CONFIRM_CODE"><value>Confirm</value></data>
+  <data name="EN_SMA_EXPANDING_VARIABLES"><value>Expanding variables</value></data>
+  <data name="MESSAGE_NO_DISK_SPACE"><value>There is not enough space on disk for the application's installation.Please contact Front Desk.</value></data>
+  <data name="MESSAGE_ORDER_CANCELED_HEADER"><value>Your order has been canceled</value></data>
+  <data name="APPLICATION_ADD_DATE"><value>Add date</value></data>
+  <data name="SECTION_MODULE_SHOP"><value>Shop</value></data>
+  <data name="MESSAGE_CONFIRM_OFFLINE_LOGOUT"><value>Server is currently off line. Logging out could lead to loss of Personal User files. 
+Are you sure you want to logout now?</value></data>
+  <data name="EN_SMA_RESOLVING_SERVER_HOSTNAME"><value>Resolving server Host name</value></data>
+  <data name="SECTION_MODULE_APPLICATIONS_TITLE"><value>Applications &amp; Games</value></data>
+  <data name="APPLICATION_RATE"><value>Rate</value></data>
+  <data name="HEADER_PRODUCT_ORDER"><value>Order</value></data>
+  <data name="LOGIN_RESULT_INVALID_PARAMETERS"><value>Invalid parameters</value></data>
+  <data name="REGISTER_ACTION_REGISTER_ACCOUNT"><value>Register account?</value></data>
+  <data name="ORDER_AWARD_TOTAL"><value>Award</value></data>
+  <data name="SECTION_MODULE_HOME_TITLE"><value>Home</value></data>
+  <data name="HEADER_USER_DEPOSITS"><value>Deposits</value></data>
+  <data name="NP_LINK"><value>Link</value></data>
+  <data name="REGISTER_SUCCESS_MESSAGE"><value>Registration completed successfully</value></data>
+  <data name="LOGGING_OUT"><value>Logging out</value></data>
+  <data name="ORDER_PAYMENT_METHOD"><value>Payment method</value></data>
+  <data name="APP_PLAY"><value>Play</value></data>
+  <data name="INFO_NEWS_EMPTY"><value>Add some news content!</value></data>
+  <data name="MESSAGE_WARNING"><value>Warning</value></data>
+  <data name="VE_FIELD_REQUIRED"><value>The field is required</value></data>
+  <data name="FILTER_PLAYER_MODE"><value>Player mode</value></data>
+  <data name="CLIENT_MANAGER_SWITCH_SHELL"><value>Switch Shell</value></data>
+  <data name="UI_CONTINUE"><value>Continue</value></data>
+  <data name="EN_SMA_CONFIGURING_FIREWALL"><value>Configuring firewall</value></data>
+  <data name="HEADER_USER_POINTS"><value>Points</value></data>
+  <data name="LOGIN_IS_CURRENTLY_UNBLOCKED"><value>Login is currently un-blocked</value></data>
+  <data name="CLIENT"><value>Client</value></data>
+  <data name="MESSAGE_ORDER_FAIL_REASON_INSUFFICIENT_FUNDS"><value>Insufficient funds</value></data>
+  <data name="MESSAGE_ORDER_COMPLETED_HEADER"><value>Order completed</value></data>
+  <data name="IF_PHONE"><value>Phone</value></data>
+  <data name="IF_SEX"><value>Sex</value></data>
+  <data name="NP_NEW_APPLICATIONS"><value>New applications</value></data>
+  <data name="IF_EMAIL"><value>Email</value></data>
+  <data name="SP_APPLICATIONS"><value>Applications</value></data>
+  <data name="MESSAGE_ORDER_ACCEPTED_HEADER"><value>Your order has been accepted</value></data>
+  <data name="VE_USERNAME_USED"><value>The specified username is already in use</value></data>
+  <data name="LOGOUT"><value>Logout</value></data>
+  <data name="LOGIN_RESULT_INVALID_PASSWORD"><value>Invalid password</value></data>
+  <data name="PRODUCT_SORT_PRICE"><value>Price</value></data>
+  <data name="REGISTER_ACTION_SEND_CODE"><value>Send</value></data>
+  <data name="POINT_PLURAL"><value>Points</value></data>
+  <data name="RESERVED"><value>RESERVED</value></data>
+  <data name="UI_YES"><value>Yes</value></data>
+  <data name="REFILL_GRACE_PERIOD_MESSAGE"><value>Your time has expired.
+Refill at the front desk or
+click "logout" to end your session.</value></data>
+  <data name="REGISTER_ACTION_REGISTER"><value>Register</value></data>
+  <data name="REGISTER_HEADER_ENTER_EMAIL"><value>Enter your email address</value></data>
+  <data name="NP_TOP_RATED"><value>Top rated</value></data>
+  <data name="CX_RUNNING"><value>Running</value></data>
+  <data name="MESSAGE_ERROR_STARTING"><value>There was an error starting the application. Click 'repair icon' to try repairing the application.</value></data>
+  <data name="CX_WORKING"><value>Working</value></data>
+  <data name="CLIENT_MANAGER_UNINSTALL"><value>Uninstall Client</value></data>
+  <data name="IF_CITY"><value>City</value></data>
+  <data name="IF_MALE"><value>Male</value></data>
+  <data name="MESSAGE_CONFIRM_PRINT"><value>Do you confirm printing document {0}?
+Print Cost {1:C}</value></data>
+  <data name="EN_SMA_LOADING_PLUGINS"><value>Loading plugins</value></data>
+  <data name="EN_SMA_INITIALIZING_PLUGINS"><value>Initializing plugins</value></data>
+  <data name="UI_ACCEPT"><value>Accept</value></data>
+  <data name="APPLICATION_CATEGORY"><value>Category</value></data>
+  <data name="HEADER_NEW_APPS"><value>New apps</value></data>
+  <data name="MESSAGE_CONFIRM_REPAIR"><value>Are you sure you want to repair the application?
+Your settings/saves could be replaced with a previously stored profile.</value></data>
+  <data name="APP_MODE_FREE_TO_PLAY"><value>Free to play</value></data>
+  <data name="UI_CANCEL"><value>Cancel</value></data>
+  <data name="SEARCH"><value>Search</value></data>
+  <data name="IF_FEMALE"><value>Female</value></data>
+  <data name="PAYMENT_METHOD_DEPOSIT"><value>Deposit</value></data>
+  <data name="APP_MODE_UTILITY"><value>Utility</value></data>
+  <data name="CLIENT_MANAGER_UNINSTALL_MESSAGE"><value>Remove client from system and clean any configuration.</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_DISALLOWED_USER_GROUP_MESSAGE"><value>Your usergroup cannot purchase this product</value></data>
+  <data name="MESSAGE_APP_READY_TO_START"><value>App is ready to start</value></data>
+  <data name="IF_FIRST_NAME"><value>First name</value></data>
+  <data name="MESSAGE_ORDER_CANCELED"><value>Your order has been canceled, please contact one of our employees for more info</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_SUCESS_MESSAGE"><value>Success</value></data>
+  <data name="HEADER_TOP_RATED_APPS"><value>Top rated</value></data>
+  <data name="EN_SMA_STARTING_SHELL"><value>Starting shell</value></data>
+  <data name="ADD_TO_ORDER"><value>Add to order</value></data>
+  <data name="MESSAGE_ORDER_ERROR"><value>Your order could not be processed</value></data>
+  <data name="MESSAGE_CONFIRM_LOGOUT"><value>Are you sure you want to logout?</value></data>
+  <data name="APP_MODE_SETTINGS"><value>Settings</value></data>
+  <data name="IF_BIRTH_DATE"><value>Birthdate</value></data>
+  <data name="SP_HOME"><value>Home</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_CLIENT_ORDER_DISALLOWED_MESSAGE"><value>Ordering is currently disallowed</value></data>
+  <data name="PRODUCT_ORDER_INSUFFICIENT_POINTS_MESSAGE"><value>You dont have enough points to make this order</value></data>
+  <data name="EXECUTION_REPAIR"><value>Repair</value></data>
+  <data name="VE_INVALID_EMAIL_ADDRESS"><value>Invalid email address</value></data>
+  <data name="EN_SMA_INSTALLING_DRIVER"><value>Installing system drivers</value></data>
+  <data name="UI_UPDATE"><value>Update</value></data>
+  <data name="APP_CANCEL"><value>Cancel</value></data>
+  <data name="PRODUCT_ORDER_CONFIRM_CLEAR_MESSAGE"><value>Are you sure you want to empty your cart ?</value></data>
+  <data name="APP_MODE_CO_OP_LAN"><value>Co-Op LAN</value></data>
+  <data name="FILTER_TYPE"><value>Type</value></data>
+  <data name="PAYMENT_METHOD_CASH"><value>Cash</value></data>
+  <data name="EN_SMA_CHECKING_DRIVER"><value>Checking system drivers</value></data>
+  <data name="DELETE_ABBREVIATED"><value>DEL</value></data>
+  <data name="APP_COMMING_SOON"><value>Coming soon</value></data>
+  <data name="IF_COUNTRY"><value>Country</value></data>
+  <data name="PAYMENT_METHOD_CREDIT_CARD"><value>Credit Card</value></data>
+  <data name="APP_SORT_ADD_DATE"><value>Add date</value></data>
+  <data name="CLIENT_MANAGER_PASSWORD"><value>Manager Password</value></data>
+  <data name="CLIENT_MANAGER_DEACTIVATE"><value>Deactivate</value></data>
+  <data name="HEADER_SYSTEM_OUT_OF_ORDER"><value>Out of order</value></data>
+  <data name="LOGIN_RESULT_FAILED"><value>General failure</value></data>
+  <data name="EN_SMA_INITIATING_CONNECTION"><value>Initiating server connection</value></data>
+  <data name="MESSAGE_APPLICATION_AGE_RESTRICTED"><value>You are not old enough to run this application</value></data>
+  <data name="USER_SETTINGS"><value>Settings</value></data>
+  <data name="APPLICATION_LINKS"><value>Links</value></data>
+  <data name="HEADER_POPULAR_APPS"><value>Popular</value></data>
+  <data name="MESSAGE_ORDER_COMPLETED"><value>Your order has been completed</value></data>
+  <data name="EN_SMA_PARSING_ARGUMENTS"><value>Parsing command line arguments</value></data>
+  <data name="LOGIN_FAILED"><value>Login failed</value></data>
+  <data name="PERSONAL_FILES"><value>Personal files</value></data>
+  <data name="MESSAGE_CONFIRM_CANCEL"><value>Are you sure you want to cancel the operation?</value></data>
+  <data name="USER_GUEST"><value>Guest</value></data>
+  <data name="APP_DETAIL"><value>Detail</value></data>
+  <data name="HEADER_SYSTEM_LOCKED"><value>Locked</value></data>
+  <data name="PRODUCT_NO_DESCRIPTION"><value>No description</value></data>
+  <data name="REGISTER_FAILED_MESSAGE"><value>Something went wrong. Contact front desk for info.</value></data>
+  <data name="LOGIN_RESULT_DENIED"><value>Denied</value></data>
+  <data name="EN_SMA_DESTROYING_CONTEXTS"><value>Destroying execution contexts</value></data>
+  <data name="APP_SORT_USE"><value>Use</value></data>
+  <data name="SORT_BY"><value>Sort by</value></data>
+  <data name="PRODUCT_SORT_DATE_ADD"><value>Add Date</value></data>
+  <data name="PRODUCT_ORDER_PAYMENT_METHOD"><value>Payment method</value></data>
+  <data name="REGISTER_HEADER_ENTER_MOBILE_PHONE"><value>Enter your mobile phone number</value></data>
+  <data name="SELECT_PAYMENT_METHOD"><value>Select Payment Method</value></data>
+  <data name="EN_SMA_EXECUTING_LOGOUT_ACTION"><value>Executing logout action</value></data>
+  <data name="SP_CONTROL_PANEL"><value>Control panel</value></data>
+  <data name="PRODUCT_ORDER_POINT_TOTAL"><value>Points</value></data>
+  <data name="SP_GAME_SERVERS"><value>Game servers</value></data>
+  <data name="SECTION_MODULE_SHOP_DESCRIPTION"><value>Shopping module</value></data>
+  <data name="HEADER_ACTIVE_APPLICATIONS"><value>Active applications</value></data>
+  <data name="PAYMENT_METHOD_POINTS"><value>Points</value></data>
+  <data name="VE_EMAIL_ADDRESS_USED"><value>The specified email address is already in use</value></data>
+  <data name="MEDIA"><value>Media</value></data>
+  <data name="LOGIN"><value>Login</value></data>
+  <data name="INFO_TOP_RATED_APPS_EMPTY"><value>No apps rated yet.</value></data>
+  <data name="UI_NO"><value>No</value></data>
+  <data name="UI_OK"><value>Ok</value></data>
+  <data name="IF_OLD_PASSWORD"><value>Old password</value></data>
+  <data name="MESSAGE_OUT_OF_ORDER"><value>Out of order</value></data>
+  <data name="EN_SMA_SETTING_USER_PROFILE"><value>Setting user profile</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_OUT_OF_STOCK_MESSAGE"><value>The product is out of stock</value></data>
+  <data name="VE_MOBILE_PHONE_USED"><value>The specified mobile phone number is already in use</value></data>
+  <data name="MESSAGE_ORDER_ON_HOLD_HEADER"><value>Order on hold</value></data>
+  <data name="NP_MOST_POPULAR_APPLICATIONS"><value>Most popular applications</value></data>
+  <data name="UI_ACCEPT_TOS"><value>I accept the above ToS</value></data>
+  <data name="LOGIN_RESULT_INVALID_USERNAME"><value>Invalid user name</value></data>
+  <data name="ORDER_CASH_TOTAL"><value>Total</value></data>
+  <data name="WARNING_CONCURRENT_EXECUTION_LIMIT_REACHED"><value>You are already running an application. Press accept to terminate any running application and continue.</value></data>
+  <data name="MESSAGE_ORDER_ACCEPTED"><value>Your order has been accepted and waiting for delivery</value></data>
+  <data name="HEADER_USER_TIME_SOURCE"><value>Time source</value></data>
+  <data name="BILLING_PROFILE"><value>Billing profile</value></data>
+  <data name="PRODUCT_ORDER_ADD_NOTE_HEADER"><value>Add note</value></data>
+  <data name="APP_MODE_SINGLE_PLAYER"><value>Single player</value></data>
+  <data name="UNKNOWN"><value>Unknown</value></data>
+  <data name="APP_MODE_ONLINE_MULTIPLAYER"><value>Online Multiplayer</value></data>
+  <data name="USER_SETTINGS_MODULE_ACCOUNT_TITLE"><value>Account</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_ERROR_MESSAGE"><value>Something went wrong</value></data>
+  <data name="WRONG_PASSWORD"><value>Wrong password</value></data>
+  <data name="APP_SORT_RELEASE_DATE"><value>Release date</value></data>
+  <data name="ENTER_PASSWORD_TO_LOCK"><value>Enter a 6 digit PIN to lock</value></data>
+  <data name="PURCHASE_OPTION_AND"><value>And</value></data>
+  <data name="LOGIN_RESULT_NOT_IN_WAITING_LINE"><value>Not in waiting line</value></data>
+  <data name="APPLICATION_TOTAL_RATES"><value>Votes</value></data>
+  <data name="LOGIN_RESULT_SUCESS"><value>Success</value></data>
+  <data name="LOGIN_RESULT_INSUFFICIENT_BALANCE"><value>Insufficient balance</value></data>
+  <data name="LOGIN_RESULT_ACCOUNT_DISABLED"><value>Your account is disabled</value></data>
+  <data name="APPLICATION_LAST_RUN"><value>Last Run</value></data>
+  <data name="APPLICATION_DEVELOPER"><value>Developer</value></data>
+  <data name="LOGIN_RESULT_MAX_SESSIONS_REACHED"><value>Maximum sessions reached</value></data>
+  <data name="APP_SORT_TITLE"><value>Title</value></data>
+  <data name="APP_MODE_GAME"><value>Game</value></data>
+  <data name="EN_SMA_UNINSTALLING_DRIVER"><value>Uninstalling system drivers</value></data>
+  <data name="IF_LAST_NAME"><value>Last name</value></data>
+  <data name="EXECUTION_TERMINATE_ALL"><value>Terminate all</value></data>
+  <data name="PRODUCT_ORDER_INSUFFICIENT_DEPOSITS_MESSAGE"><value>You dont have enough deposits to make this order</value></data>
+  <data name="INFO_QUICK_LAUNCH_EMPTY"><value>Add some quick launch executables!</value></data>
+  <data name="USERNAME"><value>Username</value></data>
+  <data name="EN_SMA_CREATING_STORAGE"><value>Creating storage</value></data>
+  <data name="HEADER_USER_TIME"><value>Time</value></data>
+  <data name="PURCHASE_OPTION_OR"><value>Or</value></data>
+  <data name="APPLICATION_TOTAL_TIME"><value>Total Time</value></data>
+  <data name="APPLICATION_TOTAL_RUN"><value>Total Runs</value></data>
+  <data name="SP_FAVORITES"><value>Favorites Applications</value></data>
+  <data name="APP_MODE_CO_OP_ONLINE"><value>Co-Op Online</value></data>
+  <data name="SELECT_APPLICATION_VERSION"><value>Select application version</value></data>
+  <data name="APPLICATION_USER_RATING"><value>User rating</value></data>
+  <data name="APP_SORT_RATING"><value>Rating</value></data>
+  <data name="CLIENT_MANAGER_DEACTIVATE_MESSAGE"><value>Deactivate client module</value></data>
+  <data name="CHANGE_PASSWORD"><value>Change Password</value></data>
+  <data name="APPLICATION_RATING"><value>Rating</value></data>
+  <data name="MESSAGE_ORDER_FAIL_REASON_INVALID_PAYMENT_METHOD"><value>Invalid payment method</value></data>
+  <data name="MESSAGE_ORDER_FAILED"><value>Your order failed</value></data>
+  <data name="USER_SETTINGS_MODULE_HARDWARE_TITLE"><value>Hardware</value></data>
+  <data name="PURCHASE_OPTION_FREE"><value>Free</value></data>
+  <data name="FILTER_ACCES"><value>Access</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_INVALID_USER_ID_MESSAGE"><value>Invalid user id</value></data>
+  <data name="LOGGING_IN"><value>Logging in</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_INVALID_PRODUCT_ID_MESSAGE"><value>Invalid product id</value></data>
+  <data name="INFO_TOP_NEW_APPS_EMPTY"><value>No apps added yet.</value></data>
+  <data name="APP_MODE_FREE_TRIAL"><value>Free trial</value></data>
+  <data name="CX_READY"><value>Ready</value></data>
+  <data name="SEARCH_NOTHING_FOUND"><value>Nothing found</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_SALE_DISALLOWED_MESSAGE"><value>Product sale is currently disallowed</value></data>
+  <data name="PRODUCT_ORDER_PASS_RESULT_GUEST_SALE_DISALLOWED_MESSAGE"><value>Only members can purchase this product</value></data>
+  <data name="CLIENT_MANAGER_LOGIN_ATTEMPTS"><value>Login Attempts</value></data>
+  <data name="EN_SMA_TERMINATING_USER_PROCESSES"><value>Terminating user processes</value></data>
+  <data name="APPLICATION_PUBLISHER"><value>Publisher</value></data>
+  <data name="FILTER_ANY"><value>Any</value></data>
+  <data name="ENTER_PASSWORD_TO_UNLOCK"><value>Enter your 6 digit PIN to unlock</value></data>
+  <data name="REGISTER_HEADER_ACCOUNT_INFO"><value>Account info</value></data>
+  <data name="MESSAGE_ORDER_ON_HOLD"><value>Your order is on hold, you will be notified once order is accepted</value></data>
+  <data name="MESSAGE_PRESS_PLAY_TO_LAUNCH"><value>Press play to launch {0}</value></data>
+  <data name="FILTER_RATING"><value>Rating</value></data>
+  <data name="PRODUCT_SORT_NAME"><value>Name</value></data>
+  <data name="APP_MODE_SPLIT_SCREEN"><value>Split Screen</value></data>
+  <data name="HEADER_USER_OUTSTANDING"><value>Outstanding</value></data>
+  <data name="APP_MODE_APPLICATION"><value>Application</value></data>
+  <data name="HEADER_FAVORITES"><value>Favorites</value></data>
+  <data name="INFO_FAVORITES_EMPTY"><value>Start some games!</value></data>
+  <data name="VE_REPEAT_PASSWORD_MISSMATCH"><value>Passwords dont match</value></data>
+  <data name="NP_MOST_USED_APPLICATIONS"><value>Your Favorites</value></data>
+  <data name="APP_MODE_ONE_TIME_PURCHASE"><value>One time purchase</value></data>
+  <data name="NP_WHATS_NEW"><value>Whats new</value></data>
+  <data name="EXECUTION_WORKING"><value>Working... Please wait.</value></data>
+  <data name="LOGGED_IN"><value>Logged in</value></data>
+  <data name="EN_SMA_PROCESSING_DRIVE_MAPPINGS"><value>Processing drive mappings</value></data>
+  <data name="MESSAGE_TIME_RUNS_OUT"><value>You have {0} minutes left.
+Please recharge your account now.</value></data>
+  <data name="IF_ADDRESS"><value>Address</value></data>
+  <data name="REGISTER_HEADER_PERSONAL_INFO"><value>Personal info</value></data>
+  <data name="UI_AGREE"><value>Agree</value></data>
+  <data name="ORDER_SEARCH"><value>Search for product</value></data>
+  <data name="EN_SMA_DESTROYING_STORAGE"><value>Destroying storage</value></data>
+  <data name="IF_POSTCODE"><value>Postcode</value></data>
+  <data name="INFO_TOP_USE_APPS_EMPTY"><value>No apps played yet.</value></data>
+  <data name="PERSONAL_STORAGE"><value>Personal Storage</value></data>
+  <data name="EN_SMA_STARTING_NETWORK_SERVICES"><value>Starting network services</value></data>
+  <data name="LOGIN_RESULT_INVALID_CREDENTIALS"><value>Invalid credentials</value></data>
+  <data name="APPLICATION_RELEASE_DATE"><value>Release date</value></data>
+  <data name="SP_MEDIA"><value>Media library</value></data>
+  <data name="EN_SMA_STARTING_UI"><value>Starting user interface</value></data>
+  <data name="GIZMO_CLIENT"><value>Gizmo</value></data>
+  <data name="IF_REPEAT_PASSWORD"><value>Repeat password</value></data>
+  <data name="CLIENT_MANAGER_SWITCH_SHELL_MESSAGE"><value>Switch to default system shell without terminating client application.</value></data>
+  <data name="REGISTER_HEADER_ENTER_CONFIRMATION_CODE"><value>Enter confirmation code</value></data>
+  <data name="PRODUCT_SORT_PRICE_POINTS"><value>Price (Points)</value></data>
+  <data name="APP_RATING_UNRATED"><value>Unrated</value></data>
+  <data name="EXECUTION_AUTO_START"><value>Autostart</value></data>
+  <data name="MESSAGE_NO_MORE_LICENSES"><value>There are no available licenses for this application.Please try again later.</value></data>
+  <data name="HEADER_SERVICE_AGREEMENT"><value>Service agreement</value></data>
+  <data name="EN_SMA_PROCESSING_TASKS"><value>Processing tasks</value></data>
+  <data name="USERNAME_OR_PHONE"><value>Username or Phone</value></data>
+  <data name="REGISTRATION_ACTION_FINISH"><value>Finish registration</value></data>
+  <data name="HEADER_QUICK_LAUNCH"><value>Quick launch</value></data>
+  <data name="LINK"><value>Link</value></data>
+  <data name="LOCK"><value>Lock</value></data>
+  <data name="REGISTRATION_FAILURE_MESSAGE"><value>Registration failed</value></data>
+  <data name="LOGIN_RESULT_ALREADY_LOGGED_IN"><value>Already logged in</value></data>
+  </root>

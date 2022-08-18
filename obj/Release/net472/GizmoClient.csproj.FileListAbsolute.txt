@@ -1,0 +1,14 @@
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\GizmoClient.csproj.AssemblyReference.cache
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\ClientApplication.baml
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\Controls\CircularProgressBar.baml
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\Controls\ManagerUI.baml
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\MessageBoxWindow.baml
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\resources\baseresources.baml
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\ClientApplication.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\Controls\CircularProgressBar.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\Controls\ManagerUI.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\MessageBoxWindow.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\Client\SplashWindow.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\GeneratedInternalTypeHelper.g.cs
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\GizmoClient_MarkupCompile.cache
+D:\Dani Files\Documents\Gizmo client\GizmoClient\obj\Release\net472\GizmoClient_MarkupCompile.lref

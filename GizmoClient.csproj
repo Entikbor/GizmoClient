@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>GizmoClient</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Client.Resources.Data.countries.json" />
+    <None Remove="Client.Resources.Icons.canceled.png" />
+    <None Remove="Client.Resources.Icons.done.png" />
+    <None Remove="Client.Resources.Icons.order_accepted.png" />
+    <None Remove="Client.Resources.Icons.stopwatch.png" />
+    <EmbeddedResource Include="Client.Resources.Data.countries.json" />
+    <EmbeddedResource Include="Client.Resources.Icons.canceled.png" />
+    <EmbeddedResource Include="Client.Resources.Icons.done.png" />
+    <EmbeddedResource Include="Client.Resources.Icons.order_accepted.png" />
+    <EmbeddedResource Include="Client.Resources.Icons.stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Win32API">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\Win32API.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="DataInterfaces">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\DataInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedLib">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\SharedLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreLib">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="GizmoShell">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\GizmoShell.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="CyClone.Core">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\CyClone.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="NetLib">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\NetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="callback.CBFSFilter.NetStd">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\callback.CBFSFilter.NetStd.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Gizmo.Web.Api.Models">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\Gizmo.Web.Api.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="GizmoDALEntities">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\GizmoDALEntities.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows.Foundation.UniversalApiContract">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0\Windows.Foundation.UniversalApiContract\14.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="callback.CBFSConnect.NetStd">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\callback.CBFSConnect.NetStd.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmo.Shared">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\Gizmo.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="ffme.win">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\ffme.win.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeExplode">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\YoutubeExplode.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Microsoft.Extensions.Hosting.WindowsServices">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\Microsoft.Extensions.Hosting.WindowsServices.dll</HintPath>
+    </Reference>
+    <Reference Include="CyClone.VFS">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\CyClone.VFS.dll</HintPath>
+    </Reference>
+    <Reference Include="TransformLib">
+      <HintPath>C:\Program Files (x86)\NETProjects\Gizmo Client\TransformLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows.Foundation.FoundationContract">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0\Windows.Foundation.FoundationContract\4.0.0.0\Windows.Foundation.FoundationContract.winmd</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.WindowsRuntime" />
+  </ItemGroup>
+</Project>
